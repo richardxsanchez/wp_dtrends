@@ -1,2 +1,2 @@
-# storefront
-storefront v1.0
+# wp-dtrends
+wp-dtrends v1.0
