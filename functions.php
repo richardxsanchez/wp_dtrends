@@ -24,3 +24,13 @@ function sf_child_theme_dequeue_style() {
  */
 
 
+
+function storefront_cart_link() {
+	?>
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
+			<span>Cart </span><span class="count"><?php echo wp_kses_data( sprintf( _n( '( %d )', '( %d )', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) );?></span>
+		</a>
+	<?php
+}
+
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 36;' ), 20 );

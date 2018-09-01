@@ -19,30 +19,37 @@
  * FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
  * Images License: GNU General Public License v2 or later
  */
-.site-branding img {
-  width: 80px !important; }
 
-.site-search input, .site-search input:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: transparent; }
 
-.storefront-primary-navigation {
-  float: right; }
-  .storefront-primary-navigation .main-navigation {
-    float: unset !important;
-    margin: 0 !important;
-    display: inline-block !important;
-    width: auto !important; }
-    .storefront-primary-navigation .main-navigation div.menu:last-child {
-      display: none !important; }
 
-.site-header-cart {
-  float: unset !important;
-  width: auto !important;
-  margin: 0 !important;
-  display: inline-block !important; }
-  .site-header-cart .cart-contents::after {
-    display: none; }
-  .site-header-cart .widget_shopping_cart, .site-header-cart .widget_shopping_cart_content {
-    display: none; }
+//header//
+//logo//
+.site-branding
+  img
+    width: 80px !important
+
+.site-search
+  input, input:focus
+    box-shadow: none
+    background: transparent
+
+.storefront-primary-navigation
+  float: right
+  .main-navigation
+    float: unset !important
+    margin: 0 !important
+    display: inline-block !important
+    width: auto !important
+    //hide drop down menu
+    div.menu:last-child
+      display: none !important
+.site-header-cart
+  float: unset !important
+  width: auto !important
+  margin: 0 !important
+  display: inline-block !important
+  //widget cart and icon
+  .cart-contents::after
+    display: none
+  .widget_shopping_cart, .widget_shopping_cart_content
+    display: none
